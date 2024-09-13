@@ -302,14 +302,14 @@ with the cleaned data:
    and ``max_price`` (the maximum price to consider):
    
    ```bash
-   > cookiecutter cookie-mlflow-step -o src
-   step_name [step_name]: basic_cleaning
-   script_name [run.py]: run.py
-   job_type [my_step]: basic_cleaning
-   short_description [My step]: A very basic data cleaning
-   long_description [An example of a step using MLflow and Weights & Biases]: Download from W&B the raw dataset and apply some basic data cleaning, exporting the result to a new artifact
-   parameters [parameter1,parameter2]: input_artifact,output_artifact,output_type,output_description,min_price,max_price
-   ```
+cookiecutter cookie-mlflow-step -o src \
+step_name [step_name]: basic_cleaning \
+script_name [run.py]: run.py \
+job_type [my_step]: basic_cleaning \
+short_description [My step]: A very basic data cleaning \
+long_description [An example of a step using MLflow and Weights & Biases]: Download from W&B the raw dataset and apply  some basic data cleaning, exporting the result to a new artifact \
+parameters [parameter1,parameter2]: input_artifact,output_artifact,output_type,output_description,min_price,max_price \
+```
    This will create a directory ``src/basic_cleaning`` containing the basic files required 
    for a MLflow step: ``conda.yml``, ``MLproject`` and the script (which we named ``run.py``).
    
