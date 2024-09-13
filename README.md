@@ -5,12 +5,11 @@ The second project for the [ML DevOps Engineer Nanodegree](https://www.udacity.c
 
 ## Description
 
-This project is part of Unit 3: Building a Reproducible Model Workflow. The problem is to build a complete end to end ML pipeline to predict rental prices for airbnb rentals and make it reusable.
+This project, part of Unit 3 on Building a Reproducible Model Workflow, involves developing a full end-to-end machine learning pipeline to predict Airbnb rental prices. The goal is to create a reusable and efficient solution.
 
 ## Prerequisites
 
 Python and Jupyter Notebook are required.
-Also a Linux environment may be needed within windows through WSL.
 
 ## Dependencies
 - mlflow
@@ -18,7 +17,7 @@ Also a Linux environment may be needed within windows through WSL.
 
 ## Installation
 
-The only dependency needed is [mlflow](https://github.com/mlflow/mlflow) which will take care of all other packages installed for each self contained environment. It can be installed using the package manager [pip](https://pip.pypa.io/en/stable/) to install
+
 
 ```bash
 pip install mlflow
@@ -56,7 +55,7 @@ Run evaluation step
 mlflow run . -P hydra_options="main.execute_steps=test_model"
 ```
 
-Run a specific component only
+Run a specific component
 ```bash
 mlflow run . -P hydra_options="main.execute_steps=train_random_forest"
 ```
@@ -72,6 +71,3 @@ mlflow run https://github.com/ibrahim-sheriff/Build-a-ML-Pipeline-for-Short-term
             -v [RELEASE_VERSION] \
             -P hydra_options="data.sample='sample2.csv'"
 ```
-
-## License
-Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See ```LICENSE``` for more information.
