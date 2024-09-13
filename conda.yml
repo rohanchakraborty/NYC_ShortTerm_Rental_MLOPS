@@ -1,4 +1,4 @@
-name: pipeline
+name: components
 channels:
   - conda-forge
   - defaults
@@ -9,4 +9,3 @@ dependencies:
   - pip=20.3.3
   - pip:
       - wandb==0.10.31
-      - hydra-joblib-launcher==1.1.2
